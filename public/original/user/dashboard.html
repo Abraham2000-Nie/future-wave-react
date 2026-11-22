@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Future Wave - Dashboard</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<!-- Top Navigation -->
+<div class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="place.html">Place</a>
+    <a href="feedback.html">Feedback</a>
+</div>  
+
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <p>Selected Place: <span id="selected-place"></span></p>
+    <h2 id="placeName"></h2>
+
+<div class="sections">
+
+    <div class="section-card" onclick="openMovies()">
+        <img src="images/icons/movie.png">
+        <p>Movies</p>
+    </div>
+
+    <div class="section-card" onclick="openResorts()">
+        <img src="images/icons/resort.png">
+        <p>Holiday Center</p>
+    </div>
+
+    <div class="section-card" onclick="openVehicles()">
+        <img src="images/icons/vehicles.png">
+        <p>Automobiles</p>
+    </div>
+
+    <div class="section-card" onclick="openElectronics()">
+        <img src="images/icons/electronics.png">
+        <p>E-Gadgets</p>
+    </div>
+
+    <div class="section-card" onclick="openProperties()">
+        <img src="images/icons/properties.png">
+        <p>Properties</p>
+    </div>
+
+    <div class="section-card" onclick="openEateries()">
+        <img src="images/icons/eateries.png">
+        <p>Eateries</p>
+    </div>
+
+</div>
+</div>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

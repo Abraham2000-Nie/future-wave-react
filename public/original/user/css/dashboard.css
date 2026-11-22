@@ -1,0 +1,85 @@
+/* ===== DASHBOARD PAGE ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../images/background/bg-dashboard.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+}
+/* Top Navigation Bar */
+.top-nav {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.top-nav a:hover {
+    background: #00bcd4;
+    transform: translateY(-2px);
+}s
+
+/* Page heading */
+.dashboard h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+/* Grid container */
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+/* Card */
+.section-card {
+    text-align: center;
+}
+
+/* Link reset */
+.section-card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* MAIN ICON SIZE FIX  */
+.section-card img {
+    width: 120px;      /* THIS controls icon size */
+    height: auto;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+/* Text under icon */
+.section-card p {
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Hover effect */
+.section-card img:hover {
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+
+.section-card a:hover p {
+    color:#00bcd4;
+}

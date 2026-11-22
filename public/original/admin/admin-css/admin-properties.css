@@ -1,0 +1,66 @@
+body {
+    background: url('../admin-images/admin-background/bg-properties.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.add-box, .list-box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px 15px;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    background: #7c3aed;
+    transform: scale(1.05);
+}
+
+.property-item {
+    background: #334155;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back {
+    margin-top: 20px;
+    background: orange;
+}

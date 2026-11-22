@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin – Manage Resorts</title>
+    <link rel="stylesheet" href="admin-css/admin-resorts.css">
+</head>
+
+<body>
+
+<h1>Manage Resorts</h1>
+
+<div class="main-container">
+
+    <div class="add-box">
+        <h2>Add New Resort</h2>
+
+        <select id="placeSelect"></select>
+
+        <input type="text" id="resortName" placeholder="Resort Name">
+        <input type="text" id="resortDesc" placeholder="Description">
+        <input type="date" id="resortDate">
+
+        <button onclick="addResort()">Add Resort</button>
+    </div>
+
+    <div class="list-box">
+        <h2>Existing Resorts</h2>
+
+        <select id="viewPlace" onchange="loadResorts()"></select>
+
+        <div id="resortsList"></div>
+    </div>
+
+</div>
+
+<button class="back" onclick="goBack()">Back to Dashboard</button>
+
+<script src="admin-js/admin-resorts.js"></script>
+
+</body>
+</html>

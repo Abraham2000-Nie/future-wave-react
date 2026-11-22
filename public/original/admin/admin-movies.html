@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin – Manage Movies</title>
+    <link rel="stylesheet" href="admin-css/admin-movies.css">
+</head>
+
+<body>
+
+<h1>Manage Movies</h1>
+
+<div class="main-container">
+
+    <div class="add-box">
+        <h2>Add New Movie</h2>
+
+        <select id="placeSelect"></select>
+
+        <input type="text" id="movieName" placeholder="Movie Name">
+        <input type="text" id="movieDesc" placeholder="Description">
+        <input type="date" id="movieDate">
+
+        <button onclick="addMovie()">Add Movie</button>
+    </div>
+
+    <div class="list-box">
+        <h2>Existing Movies</h2>
+
+        <select id="viewPlace" onchange="loadMovies()"></select>
+
+        <div id="moviesList"></div>
+    </div>
+
+</div>
+
+<button class="back" onclick="goBack()">Back to Dashboard</button>
+
+<script src="admin-js/admin-movies.js"></script>
+
+</body>
+</html>

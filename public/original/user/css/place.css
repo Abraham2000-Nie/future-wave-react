@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background: url('../images/background/bg-place.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* Main Box */
+.about-box {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 15px;
+
+    text-align: center;
+    width: 420px;
+
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Heading */
+.about-box h1 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Sub text */
+.about-box p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* City Buttons */
+.about-box button {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+
+    background: orange;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.about-box button:hover {
+    background: cyan;
+    color: black;
+
+    transform: scale(1.05);
+}
+
+/* Separate style ONLY for Go Back button */
+.about-box .go-back-btn {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+
+    background: #2ecc71;   /* GREEN */
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.about-box .go-back-btn:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}

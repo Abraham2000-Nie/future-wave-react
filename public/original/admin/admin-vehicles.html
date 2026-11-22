@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Manage Vehicles</title>
+    <link rel="stylesheet" href="admin-css/admin-vehicles.css">
+</head>
+
+<body>
+
+<h1>Manage Vehicles</h1>
+
+<div class="main-container">
+
+    <div class="add-box">
+        <h2>Add New Vehicle</h2>
+
+        <select id="placeSelect"></select>
+
+        <input type="text" id="vehicleName" placeholder="Vehicle Name">
+        <input type="text" id="vehicleDesc" placeholder="Description">
+        <input type="date" id="vehicleDate">
+
+        <button onclick="addVehicle()">Add Vehicle</button>
+    </div>
+
+    <div class="list-box">
+        <h2>Existing Vehicles</h2>
+
+        <select id="viewPlace" onchange="loadVehicles()"></select>
+
+        <div id="vehiclesList"></div>
+    </div>
+
+</div>
+
+<button class="back" onclick="goBack()">Back to Dashboard</button>
+
+<script src="admin-js/admin-vehicles.js"></script>
+
+</body>
+</html>

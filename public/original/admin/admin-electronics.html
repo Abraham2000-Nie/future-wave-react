@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Manage Electronics</title>
+    <link rel="stylesheet" href="admin-css/admin-electronics.css">
+</head>
+
+<body>
+
+<h1>Manage Electronics</h1>
+
+<div class="main-container">
+
+    <div class="add-box">
+        <h2>Add New Gadget</h2>
+
+        <select id="placeSelect"></select>
+
+        <input type="text" id="gadgetName" placeholder="Gadget Name">
+        <input type="text" id="gadgetDesc" placeholder="Description">
+        <input type="date" id="gadgetDate">
+
+        <button onclick="addGadget()">Add Gadget</button>
+    </div>
+
+    <div class="list-box">
+        <h2>Existing Gadgets</h2>
+
+        <select id="viewPlace" onchange="loadGadgets()"></select>
+
+        <div id="gadgetsList"></div>
+    </div>
+
+</div>
+
+<button class="back" onclick="goBack()">Back to Dashboard</button>
+
+<script src="admin-js/admin-electronics.js"></script>
+
+</body>
+</html>

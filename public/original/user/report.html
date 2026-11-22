@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Issue | Future Wave</title>
+    <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+
+<div class="report-box">
+    <h2>Report an Issue</h2>
+
+    <p><strong>Place:</strong> <span id="placeName"></span></p>
+    <p><strong>Section:</strong> <span id="sectionName"></span></p>
+
+    <h4>Issue Type</h4>
+    <div class="issues">
+        <label><input type="radio" name="issue" value="Incorrect Information"> Incorrect Information</label>
+        <label><input type="radio" name="issue" value="Date Issue"> Date Issue</label>
+        <label><input type="radio" name="issue" value="Poster Issue"> Poster Issue</label>
+        <label><input type="radio" name="issue" value="Missing Content"> Missing Content</label>
+        <label><input type="radio" name="issue" value="UI Issue"> UI / Display Issue</label>
+        <label><input type="radio" name="issue" value="Other"> Other</label>
+    </div>
+
+    <textarea id="description" placeholder="Describe the issue here..."></textarea>
+    <br><br>
+    <div class="buttons">
+        <button class="submit-btn" onclick="submitReport()">Submit</button><br><br>
+        <button class="back-btn" onclick="goBack()">Go Back</button>
+    </div>
+</div>
+
+<script src="js/report.js"></script>
+</body>
+</html>

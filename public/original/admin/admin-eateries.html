@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Manage Eateries</title>
+    <link rel="stylesheet" href="admin-css/admin-eateries.css">
+</head>
+
+<body>
+
+<h1>Manage Eateries</h1>
+
+<div class="main-container">
+
+    <div class="add-box">
+        <h2>Add New Eatery</h2>
+
+        <select id="placeSelect"></select>
+
+        <input type="text" id="eateryName" placeholder="Eatery Name">
+        <input type="text" id="eateryDesc" placeholder="Description">
+        <input type="date" id="eateryDate">
+
+        <button onclick="addEatery()">Add Eatery</button>
+    </div>
+
+    <div class="list-box">
+        <h2>Existing Eateries</h2>
+
+        <select id="viewPlace" onchange="loadEateries()"></select>
+
+        <div id="eateriesList"></div>
+    </div>
+
+</div>
+
+<button class="back" onclick="goBack()">Back to Dashboard</button>
+
+<script src="admin-js/admin-eateries.js"></script>
+
+</body>
+</html>

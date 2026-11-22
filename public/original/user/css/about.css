@@ -1,0 +1,98 @@
+/* Full page background */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background/bg-about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Main container box */
+.about-box {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 80px;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    transition: all 0.4s ease;
+}
+
+/* Hover effect for about box */
+.about-box:hover {
+    box-shadow: 0 0 20px cyan;
+    transform: scale(1.02);
+}
+
+/* Heading */
+.about-box h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+/* Hover effect on heading */
+.about-box h1:hover {
+    color: cyan;
+    letter-spacing: 2px;
+}
+
+/* Paragraph text */
+.about-box p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* Paragraph hover */
+.about-box p:hover {
+    color: #00eaff;
+    transform: scale(1.01);
+}
+
+/* Back button */
+.go-back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Back button hover */
+.go-back-btn:hover {
+    background: #084298;
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #0d6efd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-box {
+        width: 90%;
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .about-box h1 {
+        font-size: 30px;
+    }
+
+    .about-box p {
+        font-size: 16px;
+    }
+}

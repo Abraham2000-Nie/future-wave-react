@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Manage Places</title>
+    <link rel="stylesheet" href="admin-css/admin-place.css">
+</head>
+
+<body>
+
+<h1>Manage Places</h1>
+
+<div class="main-container">
+
+    <div class="add-box">
+        <h2>Add New Place</h2>
+
+        <input type="text" id="placeName" placeholder="Enter Place Name">
+
+        <button onclick="addPlace()">Add Place</button>
+    </div>
+
+    <div class="list-box">
+        <h2>Existing Places</h2>
+
+        <div id="placeList"></div>
+    </div>
+
+</div>
+
+<br>
+<button class="back" onclick="goBack()">Back to Dashboard</button>
+
+<script src="admin-js/admin-place.js"></script>
+
+</body>
+</html>

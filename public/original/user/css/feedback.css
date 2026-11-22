@@ -1,0 +1,145 @@
+/* ===== Global Page Styling ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../images/background/bg-feedback.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    color: white;
+
+    height: 100vh;
+}
+
+/* ===== Top Navigation Bar ===== */
+
+.top-nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 12px;
+    text-align: center;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.top-nav a:hover {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+.top-nav .active {
+    color: orange;
+}
+
+/* ===== Feedback Box ===== */
+
+.feedback-box {
+    width: 40%;
+    max-width: 500px;
+
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    box-shadow: 0 0 15px cyan;
+}
+
+/* ===== Headings ===== */
+
+.feedback-box h1 {
+    margin-bottom: 10px;
+    color: cyan;
+}
+
+.feedback-box p {
+    margin-bottom: 20px;
+}
+
+/* ===== Form Inputs ===== */
+
+.feedback-box input,
+.feedback-box textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border-radius: 8px;
+    border: none;
+
+    outline: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+/* Hover Effect for Inputs */
+
+.feedback-box input:hover,
+.feedback-box textarea:hover {
+    box-shadow: 0 0 10px cyan;
+}
+
+.feedback-box input:focus,
+.feedback-box textarea:focus {
+    box-shadow: 0 0 12px orange;
+}
+
+/* ===== Textarea Specific ===== */
+
+.feedback-box textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* ===== Submit Button ===== */
+
+.feedback-box button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+
+    background: #007bff;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Button Hover */
+
+.feedback-box button:hover {
+    background: orange;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px orange;
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 768px) {
+    .feedback-box {
+        width: 80%;
+    }
+}

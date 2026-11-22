@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: url('../admin-images/admin-background/bg-logins.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: cyan;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 25px;
+    border-radius: 12px;
+    width: 380px;
+    text-align: center;
+
+    box-shadow: 0 0 15px cyan;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+input {
+    width: 92%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    margin: auto;
+    display: block;
+}
+
+.eye {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button {
+    width: 96%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #4fc3f7;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin:auto;
+}
+
+button:hover {
+    background: #03a9f4;
+    transform: scale(1.05);
+}

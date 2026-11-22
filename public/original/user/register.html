@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account - Future Wave</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Future Wave</h1>
+
+    <div class="register-box">
+
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="text" id="email" placeholder="Enter Gmail ID" required>
+
+            <input type="text" id="phone" placeholder="10 Digit Phone Number" required>
+
+            <div class="password-container">
+    <input type="password" id="password" placeholder="Password" required>
+    <span class="eye" onclick="togglePassword('password')">👁</span>
+</div>
+
+<div class="password-container">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+    <span class="eye" onclick="togglePassword('confirmPassword')">👁</span>
+</div>
+
+            <button type="submit">Create Account</button>
+            <button onclick="goBack()">Go Back</button>
+
+        </form>
+
+        <p class="login-link">
+            Already have an account? <a href="index.html">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+</html>

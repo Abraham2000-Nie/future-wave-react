@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../images/background/bg-eateries.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+/* top buttons */
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.top-buttons button {
+    padding: 8px 14px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* title */
+h1 {
+    text-align: center;
+    margin-top: 90px;
+}
+
+/* container */
+.eateries-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* card */
+.eatery-box {
+    width: 240px;
+    background: rgba(0,0,0,0.65);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eatery-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,230,230,0.6);
+}
+
+/* image */
+.eatery-box img {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.eatery-box h3 {
+    margin: 8px 0 5px;
+}
+
+.eatery-box p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.eatery-box span {
+    font-size: 13px;
+    color: #00e6e6;
+}
+
+/* booking */
+.booking {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.booking p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.booking a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #00e6e6;
+    font-weight: bold;
+}
+
+.booking a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 6px;
+}

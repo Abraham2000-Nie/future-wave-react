@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Future Wave - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Future Wave</h1>
+
+    <div class="login-box">
+
+        <h2>User Login</h2>
+
+        <form id="loginForm">
+
+            <input type="text" id="loginInput" placeholder="Enter Email or Phone" required>
+
+            <div class="password-container">
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <span class="eye" onclick="togglePassword('loginPassword')">👁</span>
+            </div>
+
+            <button type="submit">Login</button>
+            <button onclick="goBack()">Go Back</button>
+
+        </form>
+
+        <p class="create-link">
+            New user? <a href="register.html">Create Account</a>
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com"target="_blank">
+            <img src="images/icons/facebook.png" alt="Facebook">
+            <a href="https://www.instagram.com"target="_blank">
+            <img src="images/icons/instagram.png" alt="Instagram">
+            <a href="https://www.twitter.com"target="_blank">
+            <img src="images/icons/twitter.png" alt="Twitter"></a>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

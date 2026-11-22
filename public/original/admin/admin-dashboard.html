@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard – Future Wave</title>
+
+    <link rel="stylesheet" href="admin-css/admin-dashboard.css">
+</head>
+
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<div class="top-buttons">
+    <button onclick="openPage('admin-about.html')">About</button>
+    <button onclick="openPage('admin-place.html')">Place</button>
+    <button onclick="openPage('admin-feedback.html')">Feedback</button>
+    <button onclick="openPage('admin-report.html')">Reports</button>
+</div>
+
+<div class="container">
+
+    <div class="section" onclick="openPage('admin-movies.html')">
+        <img src="admin-images/admin-icons/movie.png">
+        <h3>Movies</h3>
+    </div>
+
+    <div class="section" onclick="openPage('admin-resorts.html')">
+        <img src="admin-images/admin-icons/resort.png">
+        <h3>Holiday Center</h3>
+    </div>
+
+    <div class="section" onclick="openPage('admin-vehicles.html')">
+        <img src="admin-images/admin-icons/vehicles.png">
+        <h3>Automobiles</h3>
+    </div>
+
+    <div class="section" onclick="openPage('admin-electronics.html')">
+        <img src="admin-images/admin-icons/electronics.png">
+        <h3>E-gadgets</h3>
+    </div>
+
+    <div class="section" onclick="openPage('admin-properties.html')">
+        <img src="admin-images/admin-icons/properties.png">
+        <h3>Properties</h3>
+    </div>
+
+    <div class="section" onclick="openPage('admin-eateries.html')">
+        <img src="admin-images/admin-icons/eateries.png">
+        <h3>Eateries</h3>
+    </div>
+
+</div>
+<script src="admin-js/admin-dashboard.js"></script>
+
+<button class="logout" onclick="logout()">Logout</button>
+
+</body>
+</html>
