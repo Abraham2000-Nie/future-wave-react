@@ -21,10 +21,6 @@
   background: linear-gradient(135deg, rgba(25, 167, 181, 0.98), rgba(41, 112, 169, 0.98));
 }
 
-#bgVideoMobile {
-  display: none;
-}
-
 .page-user-dashboard .top-nav {
   right: max(24px, calc((100vw - 1180px) / 2));
   gap: 6px;
@@ -626,24 +622,6 @@
 }
 
 @media (max-width: 700px) {
-  .page-welcome #bgVideo {
-    z-index: -2;
-    object-fit: cover;
-  }
-
-  .page-welcome #bgVideoMobile {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center top;
-    pointer-events: none;
-  }
-
   .page-welcome {
     box-sizing: border-box;
     display: flex;
@@ -788,6 +766,12 @@
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .page-welcome #bgVideo {
+    object-fit: fill;
   }
 }
 
