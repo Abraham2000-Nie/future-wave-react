@@ -21,6 +21,10 @@
   background: linear-gradient(135deg, rgba(25, 167, 181, 0.98), rgba(41, 112, 169, 0.98));
 }
 
+#bgVideoMobile {
+  display: none;
+}
+
 .page-user-dashboard .top-nav {
   right: max(24px, calc((100vw - 1180px) / 2));
   gap: 6px;
@@ -622,6 +626,89 @@
 }
 
 @media (max-width: 700px) {
+  .page-welcome #bgVideo {
+    z-index: -2;
+    object-fit: cover;
+  }
+
+  .page-welcome #bgVideoMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+    pointer-events: none;
+  }
+
+  .page-welcome {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 18px 14px;
+  }
+
+  .page-welcome .content {
+    position: relative;
+    top: auto;
+    left: auto;
+    box-sizing: border-box;
+    width: min(100%, 560px);
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    transform: none;
+  }
+
+  .page-welcome .content > p {
+    margin: 0 0 14px;
+  }
+
+  .page-welcome .content button {
+    min-width: 0;
+    width: min(100%, 230px);
+    margin: 7px;
+  }
+
+  .page-welcome .social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .page-welcome .social a {
+    display: inline-flex;
+  }
+
+  .page-welcome .social img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 10px 0 12px;
+  }
+
+  .page-welcome .credits-box {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px 12px;
+  }
+
+  .page-welcome .credits-box p {
+    margin: 7px 0;
+    font-size: clamp(0.82rem, 3.5vw, 0.96rem);
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    overflow-wrap: anywhere;
+  }
+
   .page-user-dashboard .top-nav {
     right: auto;
   }
@@ -691,6 +778,16 @@
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     width: calc(100% - 28px);
     gap: 18px;
+  }
+}
+
+@media (max-width: 700px), (max-height: 650px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
 
