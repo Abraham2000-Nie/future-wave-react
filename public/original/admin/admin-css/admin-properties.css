@@ -1,5 +1,5 @@
 body {
-    background: url('../admin-images/admin-background/bg-properties.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #2e1065, #6d28d9);
     background-size: cover;
 
     font-family: Arial;

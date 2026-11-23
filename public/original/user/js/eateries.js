@@ -62,8 +62,6 @@ if (storedEateries[place]) {
         box.className = "eatery-box";
 
         box.innerHTML = `
-            <img src="images/posters/eateries1.jpg" alt="Eatery">
-
             <h3>${eatery.name}</h3>
             <p>${eatery.desc}</p>
             <span>${eatery.date}</span>

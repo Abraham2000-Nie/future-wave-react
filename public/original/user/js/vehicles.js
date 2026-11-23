@@ -63,8 +63,6 @@ if (storedVehicles[place]) {
         box.className = "vehicle-box";
 
         box.innerHTML = `
-            <img src="images/posters/vehicles1.jpg" alt="Vehicle">
-
             <h3>${vehicle.name}</h3>
             <p>${vehicle.desc}</p>
             <span>${vehicle.date}</span>

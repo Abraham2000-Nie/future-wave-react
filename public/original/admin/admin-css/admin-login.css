@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background: url('../admin-images/admin-background/bg-logins.jpg');
+    background: linear-gradient(135deg, #111827, #1d4ed8);
     background-size: cover;
     background-position: center;
     height: 100vh;

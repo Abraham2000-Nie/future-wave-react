@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("../images/background/bg-resort.jpg") no-repeat center center;
+    background: linear-gradient(135deg, #052e2b, #0f766e);
     background-size: cover;
     color: white;
 }
@@ -50,14 +50,6 @@ h1 {
 .resort-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0,230,230,0.6);
-}
-
-/* image */
-.resort-box img {
-    width: 100%;
-    height: 220px;
-    border-radius: 8px;
-    margin-bottom: 10px;
 }
 
 .resort-box h3 {

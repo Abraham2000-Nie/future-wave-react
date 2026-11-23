@@ -62,8 +62,6 @@ if (storedProperties[place]) {
         box.className = "property-box";
 
         box.innerHTML = `
-            <img src="images/posters/properties1.jpg" alt="Property">
-
             <h3>${property.name}</h3>
             <p>${property.desc}</p>
             <span>Launched: ${property.date}</span>

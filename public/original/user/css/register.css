@@ -1,5 +1,5 @@
 body {
-    background: url('../images/background/bg-register.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #111827, #1d4ed8);
     background-size: cover;
     font-family: Arial;
     color: white;

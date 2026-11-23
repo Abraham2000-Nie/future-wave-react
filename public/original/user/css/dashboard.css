@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("../images/background/bg-dashboard.jpg") no-repeat center center/cover;
+    background: linear-gradient(135deg, #0f172a, #0e7490);
     min-height: 100vh;
     color: #fff;
 }
@@ -51,6 +51,11 @@ body {
 /* Card */
 .section-card {
     text-align: center;
+    padding: 28px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    background: rgba(15, 23, 42, 0.35);
+    transition: background 0.2s, transform 0.2s;
 }
 
 /* Link reset */
@@ -59,12 +64,9 @@ body {
     color: #fff;
 }
 
-/* MAIN ICON SIZE FIX  */
-.section-card img {
-    width: 120px;      /* THIS controls icon size */
-    height: auto;
-    display: block;
-    margin: 0 auto 12px;
+.section-card:hover {
+    transform: translateY(-4px);
+    background: rgba(15, 23, 42, 0.55);
 }
 
 /* Text under icon */
@@ -72,12 +74,6 @@ body {
     font-size: 16px;
     margin: 0;
     color: #fff;
-}
-
-/* Hover effect */
-.section-card img:hover {
-    transform: scale(1.08);
-    transition: 0.3s;
 }
 
 .section-card a:hover p {

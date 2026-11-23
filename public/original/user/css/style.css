@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('../images/background/bg-login.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #111827, #1d4ed8);
     background-size: cover;
     color: white;
 }
@@ -106,14 +106,16 @@ button:hover {
     margin-top: 15px;
 }
 
-.social-icons img {
-    width: 40px;
+.social-icons a {
+    display: inline-block;
     margin: 0 10px;
+    color: #d7fbff;
+    text-decoration: none;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 /* SOCIAL ICON HOVER */
-.social-icons img:hover {
+.social-icons a:hover {
     transform: scale(1.2);
 }

@@ -1,5 +1,5 @@
 body {
-    background: url('../admin-images/admin-background/bg-feedback.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #431407, #be123c);
     background-size: cover;
     font-family: Arial;
     text-align: center;

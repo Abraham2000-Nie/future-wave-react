@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background: url('../images/background/bg-place.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #042f2e, #0f766e);
     background-size: cover;
 
     font-family: Arial, sans-serif;

@@ -1,5 +1,5 @@
 body {
-    background: url('../admin-images/admin-background/bg-eateries.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #431407, #b45309);
     background-size: cover;
 
     font-family: Arial;

@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background-image: url("../images/background/bg-feedback.jpg");
+    background: linear-gradient(135deg, #431407, #be123c);
 
     background-size: cover;
     background-position: center;

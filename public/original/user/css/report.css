@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 
-    background: url('../images/background/bg-report.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #3f0f27, #be123c);
     background-size: cover;
 
     display: flex;

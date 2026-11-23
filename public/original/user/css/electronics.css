@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("../images/background/bg-electronics.jpg") no-repeat center center;
+    background: linear-gradient(135deg, #082f49, #2563eb);
     background-size: cover;
     color: white;
 }
@@ -50,14 +50,6 @@ h1 {
 .electronics-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0,230,230,0.6);
-}
-
-/* image */
-.electronics-box img {
-    width: 100%;
-    height: 220px;
-    border-radius: 8px;
-    margin-bottom: 10px;
 }
 
 .electronics-box h3 {

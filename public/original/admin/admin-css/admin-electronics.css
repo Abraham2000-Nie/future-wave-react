@@ -1,5 +1,5 @@
 body {
-    background: url('../admin-images/admin-background/bg-electronics.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #082f49, #2563eb);
     background-size: cover;
 
     font-family: Arial;

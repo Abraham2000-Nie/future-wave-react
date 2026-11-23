@@ -61,8 +61,6 @@ if (storedMovies[place]) {
         box.className = "movie-box";  
 
         box.innerHTML = `  
-            <img src="images/posters/movie1.jpg" alt="Movie">  
-
             <h3>${movie.name}</h3>  
             <p>${movie.desc}</p>  
             <span>Release: ${movie.date}</span>  

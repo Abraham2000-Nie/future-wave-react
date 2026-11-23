@@ -1,5 +1,5 @@
 body {
-    background: url('../admin-images/admin-background/bg-resort.jpg') no-repeat center center fixed;
+    background: linear-gradient(135deg, #052e2b, #0f766e);
     background-size: cover;
 
     font-family: Arial;

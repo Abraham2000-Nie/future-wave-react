@@ -63,8 +63,6 @@ if (storedElectronics[place]) {
         box.className = "electronics-box";
 
         box.innerHTML = `
-            <img src="images/posters/electronics1.jpg" alt="Electronics">
-
             <h3>${item.name}</h3>
             <p>${item.desc}</p>
             <span>${item.date}</span>

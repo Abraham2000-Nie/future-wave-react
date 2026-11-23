@@ -169,7 +169,6 @@ function transformScript(source, ns) {
     'window.location.href = page ? (page.indexOf("admin-") === 0 ? "/admin/" + page.replace(/^admin-/, "").replace(/\\.html.*$/, "") : "/user/" + page.replace(/\\.html.*$/, "")) : "/";');
   output = output.replace(/window\.location\.href\s*=\s*returnPage\s*;?/g,
     'window.location.href = returnPage ? (returnPage.indexOf("/") === 0 ? returnPage : ("/user/" + returnPage.replace(/\\.html.*$/, ""))) : "/user/dashboard";');
-  output = output.replace(/src="images\//g, 'src="/original/user/images/');
   const declarations = [...output.matchAll(/function\s+([A-Za-z_$][\w$]*)\s*\(/g)].map(match => match[1]);
   if (declarations.length) {
     output += `\n${[...new Set(declarations)].map(name => `window.${name}=typeof ${name}==="function"?${name}:window.${name};`).join('\n')}\n`;

@@ -77,8 +77,6 @@ if (storedResorts[place]) {
         box.className = "resort-box";
 
         box.innerHTML = `
-            <img src="images/posters/resort1.jpg" alt="Resort">
-
             <h3>${resort.name}</h3>
             <p>${resort.desc}</p>
             <span>Opened: ${resort.date}</span>

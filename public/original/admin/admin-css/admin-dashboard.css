@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background: url('../admin-images/admin-background/bg-dashboard.jpg');
+    background: linear-gradient(135deg, #0f172a, #0e7490);
     background-size: cover;
     background-position: center;
     color: white;
@@ -51,13 +51,6 @@ h1 {
     cursor: pointer;
     transition: 0.3s ease;
     text-align: center;
-}
-
-/* ICON INSIDE SECTION */
-.section img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
 }
 
 /* TEXT */
