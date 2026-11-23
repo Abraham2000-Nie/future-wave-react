@@ -270,7 +270,6 @@ textarea::placeholder {
 .resorts-container,
 .vehicles-container,
 .electronics-container,
-.properties-container,
 .eateries-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
@@ -284,7 +283,6 @@ textarea::placeholder {
 .resort-box,
 .vehicle-box,
 .electronics-box,
-.property-box,
 .eatery-box,
 .report-box,
 .feedback-box,
@@ -292,7 +290,6 @@ textarea::placeholder {
 .resort-item,
 .vehicle-item,
 .gadget-item,
-.property-item,
 .eatery-item,
 .place-item {
   border: 1px solid var(--ui-border);
@@ -308,7 +305,6 @@ textarea::placeholder {
 .resort-box:hover,
 .vehicle-box:hover,
 .electronics-box:hover,
-.property-box:hover,
 .eatery-box:hover,
 .report-box:hover,
 .feedback-box:hover,
@@ -316,7 +312,6 @@ textarea::placeholder {
 .resort-item:hover,
 .vehicle-item:hover,
 .gadget-item:hover,
-.property-item:hover,
 .eatery-item:hover,
 .place-item:hover {
   border-color: rgba(119, 244, 255, 0.58);
@@ -328,7 +323,6 @@ textarea::placeholder {
 .resort-box h3,
 .vehicle-box h3,
 .electronics-box h3,
-.property-box h3,
 .eatery-box h3 {
   font-size: 1.1rem;
   line-height: 1.35;
@@ -338,7 +332,6 @@ textarea::placeholder {
 .resort-box p,
 .vehicle-box p,
 .electronics-box p,
-.property-box p,
 .eatery-box p {
   color: var(--ui-muted);
   line-height: 1.55;
@@ -348,7 +341,6 @@ textarea::placeholder {
 .resort-box span,
 .vehicle-box span,
 .electronics-box span,
-.property-box span,
 .eatery-box span {
   color: #8df5ff;
   font-weight: 600;
@@ -538,7 +530,6 @@ textarea::placeholder {
   .resorts-container,
   .vehicles-container,
   .electronics-container,
-  .properties-container,
   .eateries-container {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     width: calc(100% - 24px);

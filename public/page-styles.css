@@ -300,11 +300,6 @@
   --page-accent-soft: rgba(182, 160, 255, 0.17);
 }
 
-.page-user-properties {
-  --page-accent: #f39fc4;
-  --page-accent-soft: rgba(243, 159, 196, 0.17);
-}
-
 .page-user-eateries {
   --page-accent: #ffad79;
   --page-accent-soft: rgba(255, 173, 121, 0.17);
@@ -314,7 +309,6 @@
 .page-user-resorts .top-buttons,
 .page-user-vehicles .top-buttons,
 .page-user-electronics .top-buttons,
-.page-user-properties .top-buttons,
 .page-user-eateries .top-buttons {
   position: fixed;
   top: 16px;
@@ -328,7 +322,6 @@
 .page-user-resorts .top-buttons button,
 .page-user-vehicles .top-buttons button,
 .page-user-electronics .top-buttons button,
-.page-user-properties .top-buttons button,
 .page-user-eateries .top-buttons button {
   border-color: color-mix(in srgb, var(--page-accent) 58%, transparent);
   background: linear-gradient(135deg, rgba(15, 39, 62, 0.98), rgba(17, 58, 82, 0.98));
@@ -338,7 +331,6 @@
 .page-user-resorts .top-buttons button:hover,
 .page-user-vehicles .top-buttons button:hover,
 .page-user-electronics .top-buttons button:hover,
-.page-user-properties .top-buttons button:hover,
 .page-user-eateries .top-buttons button:hover {
   border-color: var(--page-accent);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28), 0 0 18px var(--page-accent-soft);
@@ -348,7 +340,6 @@
 .page-user-resorts h1,
 .page-user-vehicles h1,
 .page-user-electronics h1,
-.page-user-properties h1,
 .page-user-eateries h1 {
   width: fit-content;
   max-width: calc(100% - 36px);
@@ -366,7 +357,6 @@
 .page-user-resorts .resort-box,
 .page-user-vehicles .vehicle-box,
 .page-user-electronics .electronics-box,
-.page-user-properties .property-box,
 .page-user-eateries .eatery-box {
   border-top: 3px solid var(--page-accent);
   background: linear-gradient(155deg, rgba(8, 19, 36, 0.85), rgba(8, 31, 48, 0.72));
@@ -376,7 +366,6 @@
 .page-user-resorts .resorts-container,
 .page-user-vehicles .vehicles-container,
 .page-user-electronics .electronics-container,
-.page-user-properties .properties-container,
 .page-user-eateries .eateries-container {
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   align-items: stretch;
@@ -389,7 +378,6 @@
 .page-user-resorts .resort-box,
 .page-user-vehicles .vehicle-box,
 .page-user-electronics .electronics-box,
-.page-user-properties .property-box,
 .page-user-eateries .eatery-box {
   width: auto;
   min-height: 100%;
@@ -401,7 +389,6 @@
 .page-user-resorts .resort-box span,
 .page-user-vehicles .vehicle-box span,
 .page-user-electronics .electronics-box span,
-.page-user-properties .property-box span,
 .page-user-eateries .eatery-box span {
   color: var(--page-accent);
 }
@@ -410,7 +397,6 @@
 .page-user-resorts .booking a,
 .page-user-vehicles .booking a,
 .page-user-electronics .booking a,
-.page-user-properties .booking a,
 .page-user-eateries .booking a {
   color: var(--page-accent);
 }
@@ -523,11 +509,6 @@
   --page-accent-soft: rgba(182, 160, 255, 0.16);
 }
 
-.page-admin-properties {
-  --page-accent: #f39fc4;
-  --page-accent-soft: rgba(243, 159, 196, 0.16);
-}
-
 .page-admin-eateries {
   --page-accent: #ffad79;
   --page-accent-soft: rgba(255, 173, 121, 0.16);
@@ -540,7 +521,6 @@
 .page-admin-resorts > h1,
 .page-admin-vehicles > h1,
 .page-admin-electronics > h1,
-.page-admin-properties > h1,
 .page-admin-eateries > h1 {
   margin: 28px auto;
   font-size: clamp(1.8rem, 3vw, 2.45rem);
@@ -556,8 +536,6 @@
 .page-admin-vehicles .list-box,
 .page-admin-electronics .add-box,
 .page-admin-electronics .list-box,
-.page-admin-properties .add-box,
-.page-admin-properties .list-box,
 .page-admin-eateries .add-box,
 .page-admin-eateries .list-box {
   border-top: 3px solid var(--page-accent);
@@ -568,7 +546,6 @@
 .page-admin-resorts .main-container button:not(.delete-btn),
 .page-admin-vehicles .main-container button:not(.delete-btn),
 .page-admin-electronics .main-container button:not(.delete-btn),
-.page-admin-properties .main-container button:not(.delete-btn),
 .page-admin-eateries .main-container button:not(.delete-btn),
 .page-admin-place .main-container button:not(.delete-btn) {
   border-color: var(--page-accent);
@@ -579,7 +556,6 @@
 .page-admin-resorts .main-container button:not(.delete-btn):hover,
 .page-admin-vehicles .main-container button:not(.delete-btn):hover,
 .page-admin-electronics .main-container button:not(.delete-btn):hover,
-.page-admin-properties .main-container button:not(.delete-btn):hover,
 .page-admin-eateries .main-container button:not(.delete-btn):hover,
 .page-admin-place .main-container button:not(.delete-btn):hover {
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28), 0 0 18px var(--page-accent-soft);
@@ -590,7 +566,6 @@
 .page-admin-resorts .resort-item,
 .page-admin-vehicles .vehicle-item,
 .page-admin-electronics .gadget-item,
-.page-admin-properties .property-item,
 .page-admin-eateries .eatery-item {
   padding: 14px;
   border-left: 3px solid var(--page-accent);
@@ -728,7 +703,6 @@
   .page-user-resorts .top-buttons,
   .page-user-vehicles .top-buttons,
   .page-user-electronics .top-buttons,
-  .page-user-properties .top-buttons,
   .page-user-eateries .top-buttons {
     position: relative;
     top: auto;
@@ -742,7 +716,6 @@
   .page-user-resorts h1,
   .page-user-vehicles h1,
   .page-user-electronics h1,
-  .page-user-properties h1,
   .page-user-eateries h1 {
     margin-top: 24px;
   }
@@ -751,7 +724,6 @@
   .page-user-resorts .resorts-container,
   .page-user-vehicles .vehicles-container,
   .page-user-electronics .electronics-container,
-  .page-user-properties .properties-container,
   .page-user-eateries .eateries-container {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     width: calc(100% - 28px);

@@ -24,11 +24,6 @@ function openElectronics() {
     window.location.href = "electronics.html?place=" + selected;
 }
 
-function openProperties() {
-    let selected = localStorage.getItem("selectedPlace");
-    window.location.href = "properties.html?place=" + selected;
-}
-
 function openEateries() {
     let selected = localStorage.getItem("selectedPlace");
     window.location.href = "eateries.html?place=" + selected;

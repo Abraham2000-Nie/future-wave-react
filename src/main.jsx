@@ -14,7 +14,6 @@ const routes = [
   { path: '/user/resorts', html: '/original/user/resorts.html', css: ['/original/user/css/resorts.css'], ns: 'user', scripts: ['/original/user/js/resorts.js', '/original/user/js/report.js'] },
   { path: '/user/vehicles', html: '/original/user/vehicles.html', css: ['/original/user/css/vehicles.css'], ns: 'user', scripts: ['/original/user/js/vehicles.js', '/original/user/js/report.js'] },
   { path: '/user/electronics', html: '/original/user/electronics.html', css: ['/original/user/css/electronics.css'], ns: 'user', scripts: ['/original/user/js/electronics.js', '/original/user/js/report.js'] },
-  { path: '/user/properties', html: '/original/user/properties.html', css: ['/original/user/css/properties.css'], ns: 'user', scripts: ['/original/user/js/properties.js', '/original/user/js/report.js'] },
   { path: '/user/eateries', html: '/original/user/eateries.html', css: ['/original/user/css/eateries.css'], ns: 'user', scripts: ['/original/user/js/eateries.js', '/original/user/js/report.js'] },
   { path: '/admin/dashboard', html: '/original/admin/admin-dashboard.html', css: ['/original/admin/admin-css/admin-dashboard.css'], ns: 'admin', scripts: ['/original/admin/admin-js/admin-dashboard.js'] },
   { path: '/admin/about', html: '/original/admin/admin-about.html', css: ['/original/admin/admin-css/admin-about.css'], ns: 'admin', scripts: ['/original/admin/admin-js/admin-about.js'] },
@@ -25,7 +24,6 @@ const routes = [
   { path: '/admin/resorts', html: '/original/admin/admin-resorts.html', css: ['/original/admin/admin-css/admin-resorts.css'], ns: 'admin', scripts: ['/original/admin/admin-js/admin-resorts.js'] },
   { path: '/admin/vehicles', html: '/original/admin/admin-vehicles.html', css: ['/original/admin/admin-css/admin-vehicles.css'], ns: 'admin', scripts: ['/original/admin/admin-js/admin-vehicles.js'] },
   { path: '/admin/electronics', html: '/original/admin/admin-electronics.html', css: ['/original/admin/admin-css/admin-electronics.css'], ns: 'admin', scripts: ['/original/admin/admin-js/admin-electronics.js'] },
-  { path: '/admin/properties', html: '/original/admin/admin-properties.html', css: ['/original/admin/admin-css/admin-properties.css'], ns: 'admin', scripts: ['/original/admin/admin-js/admin-properties.js'] },
   { path: '/admin/eateries', html: '/original/admin/admin-eateries.html', css: ['/original/admin/admin-css/admin-eateries.css'], ns: 'admin', scripts: ['/original/admin/admin-js/admin-eateries.js'] }
 ];
 
@@ -35,7 +33,7 @@ function initializeStorage() {
   if (!localStorage.getItem('places')) {
     localStorage.setItem('places', JSON.stringify(defaultPlaces));
   }
-  const detailedAbout = 'Future Wave is a complete city guide designed to help users explore useful information across movies, holiday centers, automobiles, electronics, properties, and eateries. It brings travel planning and local discovery into one simple platform, allowing users to select their preferred city and view relevant options for that location. The project provides an easy-to-use dashboard, clear navigation, and regularly organized listings so visitors can quickly find entertainment, accommodation, shopping, dining, and property information. Administrators can also manage places and update section content, keeping the platform useful, accurate, and current. Future Wave aims to make local discovery convenient, informative, and accessible for every user.';
+  const detailedAbout = 'Future Wave is a complete city guide designed to help users explore useful information across movies, holiday centers, automobiles, electronics, and eateries. It brings travel planning and local discovery into one simple platform, allowing users to select their preferred city and view relevant options for that location. The project provides an easy-to-use dashboard, clear navigation, and regularly organized listings so visitors can quickly find entertainment, accommodation, shopping, and dining. Administrators can also manage places and update section content, keeping the platform useful, accurate, and current. Future Wave aims to make local discovery convenient, informative, and accessible for every user.';
   const currentAbout = localStorage.getItem('aboutContent');
   if (!currentAbout || currentAbout === 'Welcome to Future Wave Project!' || currentAbout === 'Default about content...') {
     localStorage.setItem('aboutContent', detailedAbout);
@@ -105,15 +103,6 @@ function initializeStorage() {
     Chennai: [{ name: 'HP Pavilion Laptop', desc: 'Gaming Laptop', date: 'Launched: 25 Nov 2022' }, { name: 'OnePlus Nord', desc: 'Midrange Smartphone', date: 'Launched: 12 Apr 2023' }, { name: 'LG Refrigerator', desc: 'Double Door Fridge', date: 'Launched: 05 May 2021' }],
     Mumbai: [{ name: 'MacBook Air M2', desc: 'Apple Laptop', date: 'Launched: 10 Jul 2022' }, { name: 'JBL Bluetooth Speaker', desc: 'Portable Speaker', date: 'Launched: 14 Feb 2023' }, { name: 'PlayStation 5', desc: 'Gaming Console', date: 'Launched: 01 Dec 2021' }],
     Pune: [{ name: 'Realme Smart TV', desc: 'Android Smart TV', date: 'Launched: 22 Mar 2022' }, { name: 'Asus Gaming Laptop', desc: 'ROG Series', date: 'Launched: 30 Oct 2022' }, { name: 'Mi Smart Watch', desc: 'Fitness Tracker', date: 'Launched: 12 Jan 2023' }]
-  });
-
-  ensureData('propertiesData', {
-    Bangalore: [{ name: 'Prestige Lakeside', desc: 'Luxury apartment project', date: '12 Feb 2022' }, { name: 'Brigade Meadows', desc: 'Premium residential flats', date: '05 Jun 2021' }, { name: 'Sobha City', desc: 'Modern housing community', date: '18 Aug 2020' }],
-    Mysore: [{ name: 'Sankalp Central Park', desc: 'Affordable housing project', date: '22 Mar 2021' }, { name: 'GSS Meadows', desc: 'Family friendly apartments', date: '10 Jan 2020' }, { name: 'Premier Residency', desc: 'City center properties', date: '15 Jul 2019' }],
-    Hyderabad: [{ name: 'My Home Bhooja', desc: 'Luxury residential apartments', date: '14 Mar 2021' }, { name: 'Aparna Sarovar', desc: 'Premium gated community', date: '08 Oct 2020' }, { name: 'Rajapushpa Provincia', desc: 'Modern housing project', date: '21 Jun 2019' }],
-    Chennai: [{ name: 'TVH Quadrant', desc: 'Premium apartments', date: '30 Apr 2021' }, { name: 'DLF Garden City', desc: 'Luxury gated community', date: '14 Nov 2020' }, { name: 'Casagrand Boulevard', desc: 'Modern residential homes', date: '05 Sep 2019' }],
-    Mumbai: [{ name: 'Lodha World Towers', desc: 'Ultra luxury flats', date: '01 Jan 2022' }, { name: 'Hiranandani Estate', desc: 'High class township', date: '18 Aug 2020' }, { name: 'Godrej Properties', desc: 'Modern housing project', date: '07 Mar 2021' }],
-    Pune: [{ name: 'Amanora Park Town', desc: 'Premium township', date: '20 Feb 2021' }, { name: 'Magarpatta City', desc: 'Integrated housing project', date: '12 Dec 2019' }, { name: 'Kolte Patil Life Republic', desc: 'Smart city homes', date: '03 Jun 2020' }]
   });
 
   ensureData('eateriesData', {
